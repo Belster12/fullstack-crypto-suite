@@ -10,7 +10,7 @@ const App = () => {
   const [currencyData, setCurrencyData] = useState(null);
 
   const fetchCurrencies = () => {
-    axios.get('http://fullstack-crypto-back.onrender.com/cryptocurrencies')
+    axios.get('https://fullstack-crypto-back.onrender.com/cryptocurrencies')
       .then(response => {
         const currenciesResponse = response.data; 
         const menuitem = [
@@ -31,7 +31,7 @@ const App = () => {
   };
 
   const fetchCurrency = () => {
-    axios.get(`http://fullstack-crypto-back.onrender.com/cryptocurrencies/${currencyId}`)
+    axios.get(`https://fullstack-crypto-back.onrender.com/cryptocurrencies/${currencyId}`)
       .then(response => {
         setCurrencyData(response.data);  // исправлено: r.data на response.data
       })
