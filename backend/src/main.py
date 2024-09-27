@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "https://fullstack-crypto-suite.onrender.com/",
+    "http://fullstack-crypto-suite.onrender.com",
     "http://localhost:5173",
 ]
 
