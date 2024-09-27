@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend import cmc_client 
+from src.__init__ import cmc_client 
 
 router = APIRouter(
   prefix="/cryptocurrencies"
