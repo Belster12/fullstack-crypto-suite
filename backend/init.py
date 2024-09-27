@@ -1,5 +1,5 @@
-from src.config import settings
-from src.http_client import CMCHTTPClient
+from backend.config import settings
+from backend.http_client import CMCHTTPClient
 
 
 cmc_client = CMCHTTPClient(

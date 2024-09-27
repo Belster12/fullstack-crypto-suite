@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.router import router as router_crypto
+from backend.router import router as router_crypto
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

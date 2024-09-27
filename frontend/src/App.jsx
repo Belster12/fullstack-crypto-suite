@@ -12,7 +12,7 @@ const App = () => {
   const fetchCurrencies = () => {
     axios.get('http://127.0.0.1:8000/cryptocurrencies')
       .then(response => {
-        const currenciesResponse = response.data;
+        const currenciesResponse = response.data; 
         const menuitem = [
           {
             key: 'g1',
