@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div className='flex'>
-      <Menu
+      <Menu 
         onClick={onClick}
         style={{ width: 256 }}
         defaultSelectedKeys={['1']}
@@ -67,7 +67,7 @@ const App = () => {
       <div className='mx-auto my-auto'>
         {currencyData ? <CryptocurrencyCard currency={currencyData} /> : <Spin size="large"/>}
       </div>
-      <span className='flex items-end mx-6 my-6'>By Wvhllamm</span>
+      <span className='fixed bottom-4 right-4 text-gray-500'>By Wvhllamm</span>
     </div>
   );
 };
