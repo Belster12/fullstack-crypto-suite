@@ -7,6 +7,7 @@ app = FastAPI()
 origins = [
     "https://fullstack-crypto-suite.onrender.com/",
     "http://localhost:5173",
+    "89.74.225.20:0",
 ]
 
 app.add_middleware(
